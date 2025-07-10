@@ -6,20 +6,38 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typegen": "npx sanity-codegen --output ./types/sanity.d.ts --watch"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.20.2",
+    "@sanity/client": "^7.3.0",
+    "@sanity/icons": "^3.7.0",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.89.0",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "framer-motion": "^12.15.0",
+    "next": "15.3.2",
+    "next-sanity": "^9.12.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react-is": "^19.1.0",
+    "rxjs": "^7.8.2",
+    "sanity": "^3.90.0",
+    "stripe": "^18.2.1",
+    "styled-components": "^6.1.18",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@eslint/eslintrc": "^3",
+    "@sanity/codegen": "^3.90.0",
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^20.17.52",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }

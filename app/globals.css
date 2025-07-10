@@ -40,3 +40,16 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+/* styles.css */
+.basket-text {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .basket-text {
+    display: inline;
+  }
+}
