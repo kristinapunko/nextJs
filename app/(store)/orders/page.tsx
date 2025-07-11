@@ -62,7 +62,7 @@ export default async function Orders() {
                             <h6 className="fw-semibold mb-3">Order Items</h6>
                             {order.products?.map((product) => (
                                 <div
-                                    key={product.product?._id}
+                                    key={product.product?._ref}
                                     className="d-flex align-items-center justify-content-between mb-3"
                                 >
                                     <div className="d-flex align-items-center">
