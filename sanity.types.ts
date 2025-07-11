@@ -298,7 +298,7 @@ export type MY_ORDERS_QUERYResult = Array<{
   email?: string;
   stripePaymentIntentId?: string;
   products: Array<{
-    products?: {
+    product?: {
       _ref: string;
       _type: "reference";
       _weak?: boolean;
@@ -306,7 +306,7 @@ export type MY_ORDERS_QUERYResult = Array<{
     };
     quantiti?: number;
     _key: string;
-    product: null;
+    // product: null;
   }> | null;
   totalPrice?: number;
   currency?: string;
