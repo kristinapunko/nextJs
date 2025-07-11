@@ -36,7 +36,9 @@ export default async function Orders() {
                             </div>
                             <div className="text-end">
                                 <p className="mb-1">Order Date</p>
-                                <p className="fw-medium">{new Date(order.orderDate).toLocaleDateString()}</p>
+                                <p className="fw-medium">
+                                    {order.orderDate ? new Date(order.orderDate).toLocaleDateString() : "Дата відсутня"}
+                                </p>
                                 <p className="mb-1">Total Amount</p>
                                 <p className="fw-bold">{formatCurrency(order.totalPrice ?? 0, order.currency)}</p>
                             </div>
