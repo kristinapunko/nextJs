@@ -23,7 +23,8 @@ export async function getMyOrders(userId:string) {
             userId,
         }
     }); 
-
+    console.log("orders.data",orders.data);
+    
     return orders.data || []; 
     } catch (error) {
     console.error("Error fetching orders:", error); 

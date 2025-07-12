@@ -306,7 +306,7 @@ export type MY_ORDERS_QUERYResult = Array<{
     };
     quantiti?: number;
     _key: string;
-    product: null;
+    product: Product;
   }> | null;
   totalPrice?: number;
   currency?: string;

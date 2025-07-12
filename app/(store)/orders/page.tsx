@@ -78,14 +78,14 @@ export default async function Orders() {
                                         <div>
                                             <p className="mb-1 fw-medium">{product.product?.name}</p>
                                             <p className="mb-0 text-muted">
-                                                Quantity: {product.quantity ?? "N/A"}
+                                                Quantity: {product.quantiti ?? "N/A"}
                                             </p>
                                         </div>
                                     </div>
                                     <p className="fw-semibold mb-0">
-                                        {product.product?.price && product.quantity
+                                        {product.product?.price && product.quantiti
                                             ? formatCurrency(
-                                                  product.product.price * product.quantity,
+                                                  product.product.price * product.quantiti,
                                                   order.currency
                                               )
                                             : "N/A"}
