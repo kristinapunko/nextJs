@@ -108,13 +108,13 @@ export async function generateMetadata({ params }: Params) {
   return {
     title: product?.name ?? "Product Not Found",
     description:
-      product?.description?.[0]?.children?.[0]?.text ??
+      product?.description?.[0] ??
       "View our product details.",
   };
 }
 
 async function ProductPage({ params }: Params) {
-  const { slug } = params;
+  const { slug } = await params;
   const product = await getProductBySlug(slug);
 
   if (!product) {
