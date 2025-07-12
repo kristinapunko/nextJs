@@ -16,7 +16,7 @@ const ProductsView = ({products, categories}:ProductsViewProps) =>{
             </div>
             <div>
                 <div>
-                    <ProductGrid products={products}/>
+                    <ProductGrid products={products} />
                  
                 </div>
             </div>
